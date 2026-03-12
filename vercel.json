@@ -1,4 +1,0 @@
-{
-  "buildCommand": "composer install && bun install && bun run build",
-  "outputDirectory": "public"
-}
