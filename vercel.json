@@ -1,31 +1,4 @@
 {
   "buildCommand": "composer install && bun install && bun run build",
-  "outputDirectory": "public",
-  "env": {
-    "APP_ENV": "production",
-    "APP_DEBUG": "false"
-  },
-  "functions": {
-    "api/index.php": {
-      "runtime": "php-8.2"
-    }
-  },
-  "routes": [
-    {
-      "src": "/images/(.*)",
-      "dest": "/images/$1"
-    },
-    {
-      "src": "/build/(.*)",
-      "dest": "/build/$1"
-    },
-    {
-      "src": "/storage/(.*)",
-      "dest": "/storage/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.php"
-    }
-  ]
+  "outputDirectory": "public"
 }
